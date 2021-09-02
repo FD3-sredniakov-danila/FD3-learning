@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hometask 1 - ishop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+    <script src="ProductsBlock.js"></script>
+    <script>
+        let shopName = "iShop";
+        let productsArr = [{
+            name: "Велосипед",
+            cost: "50$",
+            imgUrl: "https://velojournal.net/sites/default/files/styles/1280px/public/2020-04/will-gonzalez-uAK3jJr6md4-unsplash.jpg?itok=j3JZTHBT",
+            amount: 5,
+            code: "bike",
+        }, {
+            name: "Машина",
+            cost: "70500$",
+            imgUrl: "https://pic.auto.mail.ru/844172/",
+            amount: 7,
+            code: "car",
+        }, {
+            name: "Самокат",
+            cost: "110$",
+            imgUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1e/%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D1%81%D0%B0%D0%BC%D0%BE%D0%BA%D0%B0%D1%82.jpg",
+            amount: 17,
+            code: "kickScooter",
+        }];
+
+        ReactDOM.render(
+            React.createElement(ProductsBlock, {
+                title: shopName,
+                products: productsArr,
+            }),
+            document.getElementById("container")
+        );
+    </script>
+</body>
+
+</html>

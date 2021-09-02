@@ -1,0 +1,21 @@
+.ProductsBlock__tHeader th {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.ProductsBlock__rows td {
+    text-align: center;
+    padding: 20px;
+}
+
+.ProductsBlock__rows {
+    font-size: x-large;
+}
+
+.ProductsBlock__img img {
+    width: 100%;
+}
+
+.ProductsBlock__img {
+    width: 20%;
+}
